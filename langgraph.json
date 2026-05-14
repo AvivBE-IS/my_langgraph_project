@@ -1,0 +1,6 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "assistant": "./src/builder.py:build_graph"
+  }
+}
