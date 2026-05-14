@@ -9,6 +9,7 @@ class MockOllama:
     base_url: str
 
     def invoke(self, prompt: str) -> str:
+        """Return a deterministic mock response for the provided prompt."""
         return f"[MockOllama:{self.model}] {prompt}"
 
 

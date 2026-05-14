@@ -21,7 +21,8 @@ def router(state: AssistantState) -> AssistantState:
 def tool_agent(state: AssistantState) -> AssistantState:
     if state.get("error"):
         return state
-    state["draft"] = f"Draft response for: {state.get('user_input', '')}".strip()
+    cleaned_input = state.get("user_input", "").strip()
+    state["draft"] = f"Draft response for: {cleaned_input}"
     return state
 
 
