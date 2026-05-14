@@ -1,0 +1,6 @@
+langgraph
+langchain
+fastapi
+uvicorn
+sqlalchemy
+chromadb
